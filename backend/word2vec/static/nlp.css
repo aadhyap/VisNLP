@@ -86,8 +86,6 @@
   margin-top: 0px;
   margin-bottom: 0px;
 
-
-
 }
 
 
@@ -99,8 +97,20 @@
   margin-bottom: 0px;
   bottom: 0px;
 
+}
 
+.matrixform{
 
+  display: inline-block;
+  background-color: #D9D9D9;
+  width: 40%;
+  height: 545px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 70px;
+  
+
+  position: relative;
 
 }
 
