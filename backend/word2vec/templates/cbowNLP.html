@@ -17,11 +17,10 @@
 
 <div class="container-1">
   <div class="box-2">
-    <h3>Data</h3>
-    <p>Epoch: </p>
-    <p>Window Size </p>
-    <p>Embedding Dim </p>
-    <p>Batch Size: 4 </p>
+    <p class="sidetitles">Epoch: </p>
+    <p class="sidetitles">Window Size </p>
+    <p class = "sidetitles">Embedding Dim </p>
+    <p class = "sidetitles">Batch Size: 4 </p>
   </div>
 
 
@@ -59,18 +58,17 @@
     <table id = "vocabs" class = "tableVocab">
 
     </table>
-    <div>
-    <button class="next">Test CBOW</button>
-    <button class="back">Back</button>
-    <button class="next">Next</button></div>
-  </div>
-  </div>
+    
+ 
 
+  </div>
+</div>
+
+
+
+<div class = "body">
   
 
-  
-<div class="container-1">
-  <div class="container-2-box">
     <h3>Input Layer</h3>
     <div class="tbody">
     <table>
@@ -116,32 +114,11 @@
     </table>
   </div>
 
-  </div>
-
-  <div class = "centerddiv">
-  <table>
-      </tbody>
-      <tr>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>0</td>
-      </tr>
-    </table>
 </div>
-  <div class = "centerddiv">
-    <p> Right Weights</p>
-   <table id="myData"> </table>
-   
+
+
+ 
+   <div>
    
     <script>
 
@@ -151,125 +128,14 @@
                 return response.json();
             })
             .then(function (data) {
-                appendData(data);
-                LeftData(data);
-                leftBias(data)
-                modelOut(data)
-                log_probs(data)
-                y_pred(data)
-                lossData(data)
-                appendVocab(data);
+              appendVocab(data);
+                
+                
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-        function appendData(data) {
-
-            var mainContainer = document.getElementById("myData");
-              for (var i = 0; i < data.epoch1.rightWeight.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.rightWeight[i].length; j++) {
-              text += "<td>" + data.epoch1.rightWeight[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
-        function LeftData(data) {
-
-            var mainContainer = document.getElementById("leftWeight");
-              for (var i = 0; i < data.epoch1.leftWeight.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.leftWeight[i].length; j++) {
-              text += "<td>" + data.epoch1.leftWeight[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-      }
-
-        function leftBias(data) {
-
-            var mainContainer = document.getElementById("leftBias");
-              for (var i = 0; i < data.epoch1.leftBias.length; i++) {
-              var div = document.createElement("table");
-              let text = ""
-              for (var j = 0; j < data.epoch1.leftBias[i].length; j++) {
-              text += "<tr><td>" + data.epoch1.leftBias[i][j] + "</td></tr>"
-            }
-          
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
-          
-        function modelOut(data) {
-
-            var mainContainer = document.getElementById("modelOut");
-              for (var i = 0; i < data.epoch1.modelOut.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.modelOut[i].length; j++) {
-              text += "<td>" + data.epoch1.modelOut[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
-        function log_probs(data) {
-
-            var mainContainer = document.getElementById("log_probs");
-              for (var i = 0; i < data.epoch1.log_probs.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.log_probs[i].length; j++) {
-              text += "<td>" + data.epoch1.log_probs[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
-        function y_pred(data) {
-
-            var mainContainer = document.getElementById("y_pred");
-              for (var i = 0; i < data.epoch1.y_pred.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.y_pred[i].length; j++) {
-              text += "<td>" + data.epoch1.y_pred[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
-
-        function lossData(data) {
-
-            var mainContainer = document.getElementById("loss");
-              for (var i = 0; i < data.epoch1.leftWeight.length; i++) {
-              var div = document.createElement("table");
-              let text = "<tr>"
-              for (var j = 0; j < data.epoch1.leftWeight[i].length; j++) {
-              text += "<td>" + data.epoch1.leftWeight[i][j] + "</td>"
-            }
-            text += "</tr>" 
-            div.innerHTML = text
-            mainContainer.appendChild(div);
-          }   
-          
-        }
+        
 
         function appendVocab(data) {
 
@@ -307,76 +173,7 @@
     
     </script>
   </div>
-   
-
-<div class = "centerddiv">
-  <p> Calculations</p>
-   <table>
-      </tbody>
-      <tr>
-        <td>0.45</td>
-      </tr>
-      <tr>
-        <td>0.83</td>
-      </tr>
-      <tr>
-        <td>0.60</td>
-      </tr>
-      <tr>
-        <td>0.60</td>
-      </tr>
-    </table>
-
-    
-   
-  </div>
-
- 
-
-  <div class = "centerddiv">
-     <p> Left Weights</p>
-   <table id = "leftWeight">
-    </table>
-
-
-  </div>
-
-
-
-  <div class = "centerddiv">
-     <p> Left Bias </p>
-   <table id = "leftBias"></table>
-    
-  </div>
-
-  <div class = "centerddiv">
-     <p> Model Out</p>
-   <table  id = "modelOut"></table>
-   
-  </div>
-
-
- <div class = "centerddiv">
-   <p> log Probs</p>
-   <table  id = "log_probs"></table>
-   
-  </div>
-
-   <div class = "centerddiv">
-     <p> y pred</p>
-   <table  id = "y_pred"></table>
-   
-  </div>
-   <div class = "centerddiv">
-    <p>loss error</p>
-   <table  id = "loss"></table>
-   
-  </div>
-
-
-
-</div>
-</div>
+  
 
 
 

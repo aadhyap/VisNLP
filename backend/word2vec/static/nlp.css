@@ -41,10 +41,29 @@
 
 }
 
+.sidetitles{
+  font-style: "Fira Sans";
+  font-size: 18px;
+  color:white;
+  margin-top: 0px;
+
+
+
+}
 
 
 
 
+.body{
+
+  position: relative;
+  margin-bottom: 0px;
+  bottom: 0px;
+
+
+
+
+}
 
 
 
@@ -73,13 +92,8 @@
     }
   }
   
-  .container-3{
-    display:flex;  
-    flex-wrap:wrap;
-    justify-content:space-between;
-  }
-  
-  .container-1 div, .container-2 div, .container-3 div{
+
+  .container-1 div{
     border:1px #ccc solid;
     padding:10px;
 
@@ -92,6 +106,8 @@
   .box-1{
     flex:2;
     order:2;
+    width: 100%;
+    height: 120px;
 
   }
 
@@ -107,6 +123,7 @@ th, td {
   border: 4px solid #555555;
   padding: 8px;
   background-color: white;
+  text-align: center;
 }
 
 thead {
@@ -132,35 +149,28 @@ th.target{
 
 }
 
-.tbody {
-        border-top: 25px solid;
-    }
+
 
 
 
   .box-2{
     flex:0.5;
     order:1;
+    height: 120px;
   }
   
-  .box-3{
-    flex:2;
-    order: 3;a
-  }
   
-  .container-2-box{
-    flex-basis: 27%;  
-  }
   
-  .container-3-box{
-    flex-basis:12%;
-  }
+  
 
 .tableVocab{
   margin-left: auto;
   margin-right: auto;
 
 
+}
+th.tableVocab{
+  width: 30px;
 }
 
 
