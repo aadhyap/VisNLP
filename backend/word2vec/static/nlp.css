@@ -129,11 +129,59 @@
   height: 545px;
   float: right;
   margin-right: 15px;
-  margin-top: 70px;
+  margin-top: 20px;
   
 
   position: relative;
 
+}
+
+.input-table {
+    margin-right: 45%;
+    margin-left: 45%;
+    top: 0px;
+    margin-bottom: 90px;
+    margin-top: -40px;
+   min-width: 60px;
+
+}
+
+
+.input-table thead tr {
+    background-color: green;
+    color: blue;
+    text-align: left;
+}
+
+.input-table th,
+.input-table td {
+    padding: 3px 5px;
+    background-color: #A42015;
+    opacity: 0.85;
+    border: 8px solid #A42015;
+    outline: 1px solid black;
+    outline-offset: -4px;
+
+
+    font-style: "Fira Sans";
+    font-size: 24px;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+
+
+}xw
+
+.input-table tbody tr.active-row {
+    font-weight: bold;
+    color: darkred;
+
+    
 }
 
 
@@ -214,11 +262,17 @@ tbody th {
 }
 
 th.target{
+  border: 4px solid #555555;
+  padding: 8px;
   background-color: #A42015;
   color: black;
   text-align: center;
 
 }
+
+
+
+
 
 
 
@@ -263,26 +317,6 @@ button {
 
 
 
-.file_submit{
-
-  border: 1px solid #55acee;
-  outline: none;
-  background-color: #55acee;
-  color: white;
-  padding: 1vmax;
-  cursor: pointer;
-  transition: 0.3s;
-  letter-spacing: 3px;
-  width: 90px;
-  position: absolute;
-  top: 5px;
-  left;
-}
-
-.file_submit:hover{
-  background-color: white;
-  color: #55acee
-}
 .grid{
     display: grid;
     grid-gap: 2vmax;

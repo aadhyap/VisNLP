@@ -21,25 +21,25 @@
     <p class="sidetitles">Epoch: </p>
     
     <div class="slider" >
-  <input type="range" min="0" max="100"value="10"   oninput="rangeValue1.innerText = this.value">
-  <p id="rangeValue1">10</p>
+  <input type="range" min="0" max="5"value="1"   oninput="rangeValue1.innerText = this.value">
+  <p id="rangeValue1">1</p>
 </div>
     <p class="sidetitles">Window Size </p>
     <div class="slider" >
-  <input type="range" min="0" max="100"value="10"   oninput="rangeValue2.innerText = this.value">
-  <p id="rangeValue2">10</p>
+  <input type="range" min="2" max="4"value="2"   oninput="rangeValue2.innerText = this.value">
+  <p id="rangeValue2">2</p>
 </div>
 
     <p class = "sidetitles">Embedding Dim </p>
     <div class="slider" >
-  <input type="range" min="0" max="100"value="10"   oninput="rangeValue3.innerText = this.value">
-  <p id="rangeValue3">10</p>
+  <input type="range" min="1" max="4"value="3"   oninput="rangeValue3.innerText = this.value">
+  <p id="rangeValue3">3</p>
 </div>
 
     <p class = "sidetitles">Batch Size: 4 </p>
     <div class="slider" >
-  <input type="range" min="0" max="100"value="10"   oninput="rangeValue4.innerText = this.value">
-  <p id="rangeValue4">10</p>
+  <input type="range" min="0" max="4"value="4"   oninput="rangeValue4.innerText = this.value">
+  <p id="rangeValue4">4</p>
 </div>
     
     
@@ -73,7 +73,7 @@
 
       </script>
 
-      <button class = "file_submit" type="submit" >Submit </button>
+  
       
     </form>
 
@@ -108,10 +108,11 @@
 
   
 
-<h3>Input Layer</h3>
-    <div class="tbody">
-    <table>
-      
+
+    <div>
+      <h3>Input Layer</h3>
+    <table class="input-table">
+      <tbody>
       <tr>
         <td>0</td>
       </tr>
@@ -132,9 +133,9 @@
   </div>
 
 
-  <div class="tbody">
-    <table>
-      </tbody>
+  <div >
+    <table class="input-table">
+      <tbody>
       <tr>
         <td>0</td>
       </tr>
@@ -150,6 +151,7 @@
       <tr>
         <td>0</td>
       </tr>
+    </tbody>
     </table>
   </div>
 
@@ -194,7 +196,11 @@
             var div = document.createElement("table");
             let text = "<tr>"
             for (var i = 0; i < data.words.length; i++) {
+              if(i == 1){
+                text += "<th>" + data.words[i] + "</th>"
+              }else{
               text += "<th>" + data.words[i] + "</th>"
+            }
             }
             text += "</tr>" 
             
