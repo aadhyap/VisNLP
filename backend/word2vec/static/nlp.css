@@ -189,14 +189,13 @@
 
 
 .input-vis {
-    margin-right: 45%;
-    margin-left: 45%;
+    
     top: 0px;
     margin-bottom: 0px;
-    margin-top: -40px;
+  
     min-width: 50px;
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 90px;
+    margin-top: 15px;
 
 
 
@@ -246,6 +245,28 @@
   margin-right: auto;
 }
 
+
+.input-word{
+
+  font-style: "Fira Sans";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-right: 84%;
+  margin-top: 2px;
+
+
+}
+
+#super{  
+vertical-align:super;  
+font-size: medium;  
+}  
+
+#sub{  
+vertical-align: sub;  
+font-size: medium;  
+}  
 
 
 
