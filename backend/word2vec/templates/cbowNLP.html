@@ -19,13 +19,30 @@
   <div class="box-2">
     
     <p class="sidetitles">Epoch: </p>
-    <input type="range" min="1" max="100" value="50" class="slider" >
+    
+    <div class="slider" >
+  <input type="range" min="0" max="100"value="10"   oninput="rangeValue1.innerText = this.value">
+  <p id="rangeValue1">10</p>
+</div>
     <p class="sidetitles">Window Size </p>
-    <input type="range" min="1" max="100" value="50" class="slider" >
+    <div class="slider" >
+  <input type="range" min="0" max="100"value="10"   oninput="rangeValue2.innerText = this.value">
+  <p id="rangeValue2">10</p>
+</div>
+
     <p class = "sidetitles">Embedding Dim </p>
-    <input type="range" min="1" max="100" value="50" class="slider" >
+    <div class="slider" >
+  <input type="range" min="0" max="100"value="10"   oninput="rangeValue3.innerText = this.value">
+  <p id="rangeValue3">10</p>
+</div>
+
     <p class = "sidetitles">Batch Size: 4 </p>
-    <input type="range" min="1" max="100" value="50" class="slider" >
+    <div class="slider" >
+  <input type="range" min="0" max="100"value="10"   oninput="rangeValue4.innerText = this.value">
+  <p id="rangeValue4">10</p>
+</div>
+    
+    
 
   </div>
 
@@ -74,7 +91,21 @@
 
 <div class = "body">
   
+<div>
+
+
+  <h4 class = "layer"> Input Layer </h4>
+  <h4 class = "layer"> Hidden Layer </h4>
+  <h4 class = "layer"> Output Layer </h4>
+  <h4 class = "layer" style=" top: 0px;right: 140px; position: absolute;"> Matrix Form </h4>
+
+
+
+</div>
+
+
   <div class="matrixform">
+
   
 
 <h3>Input Layer</h3>
