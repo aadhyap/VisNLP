@@ -17,6 +17,8 @@
   margin-top: 0px;
   margin-left: 100px;
   font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
 
 }
@@ -124,15 +126,15 @@
 .matrixform{
 
 
-  background-color: #D9D9D9;
+  background-color: #706E6E;
   width: 40%;
   height: 545px;
-  float: right;
-  margin-right: 15px;
-  margin-top: 20px;
+  
+  top: 80px;
+  right: 30px;
   
 
-  position: relative;
+  position: absolute;
 
 }
 
@@ -140,7 +142,7 @@
     margin-right: 45%;
     margin-left: 45%;
     top: 0px;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
     margin-top: -40px;
    min-width: 60px;
 
@@ -171,17 +173,77 @@
 
 }
 
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+
+.word{
+  font-style: "Fira Sans";
+  font-size: 24px;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top:0px ;
 
 
-}xw
+}
 
-.input-table tbody tr.active-row {
+
+
+.input-vis {
+    margin-right: 45%;
+    margin-left: 45%;
+    top: 0px;
+    margin-bottom: 0px;
+    margin-top: -40px;
+    min-width: 50px;
+    margin-left: 80px;
+    margin-top: 40px;
+
+
+
+
+}
+
+
+.input-vis thead tr {
+    background-color: green;
+    color: blue;
+    text-align: left;
+}
+
+.input-vis th,
+.input-vis td {
+    padding: 3px 5px;
+    background-color: #A42015;
+    border: 1px solid #A42015;
+    opacity: 0.85;
+    font-style: "Fira Sans";
+    font-size: 24px;
+    color:black;
+    text-align: center;
     font-weight: bold;
-    color: darkred;
 
-    
+
+
+}
+
+.dotw {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dotb {
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
