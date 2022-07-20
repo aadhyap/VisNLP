@@ -203,6 +203,7 @@
 }
 
 
+
 .input-vis thead tr {
     background-color: green;
     color: blue;
@@ -212,8 +213,8 @@
 .input-vis th,
 .input-vis td {
     padding: 3px 5px;
-    background-color: #A42015;
-    border: 1px solid #A42015;
+    background-color: transparent;
+    border: 1px solid transparent;
     opacity: 0.85;
     font-style: "Fira Sans";
     font-size: 24px;
@@ -282,6 +283,10 @@
     90%  {opacity: 1;}
     100% { transform: translateY(150px); }
     100% {opacity: 0;}
+    100% {
+    visibility: hidden;
+  }
+
     
 }
 @-webkit-keyframes down {
@@ -291,6 +296,10 @@
     90%  {opacity: 1;}
     100% { transform: translateY(150px); }
     100% {opacity: 0;}
+    100% {
+    visibility: hidden;
+  }
+
     
 }
 
@@ -300,7 +309,9 @@
     90%  {opacity: 1;}
     100% { transform: translateY(-150px); }
     100% {opacity: 0;}
-    
+    100% {
+    visibility: hidden;
+  }
 }
 @-webkit-keyframes up {
     0% { transform: translateY(0); }
@@ -308,20 +319,44 @@
     90%  {opacity: 1;}
     100% { transform: translateY(-150px); }
     100% {opacity: 0;}
-    
+    100% {
+    visibility: hidden;
+  }
 }
 
 @keyframes hide {
     0%   {opacity: 1;}
     90%  {opacity: 1;}
     100% {opacity: 0;}
+    100% {
+    visibility: hidden;
+  }
     
 }
 @-webkit-keyframes hide {
      0%  {opacity: 1;}
     90%  {opacity: 1;}
     100% {opacity: 0;}
+    100% {
+    visibility: hidden;
+  }
     
+}
+
+#fininput{
+
+  visibility: hidden;
+  animation: 5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 #super{  
