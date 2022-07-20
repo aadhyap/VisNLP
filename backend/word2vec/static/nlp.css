@@ -258,6 +258,72 @@
 
 }
 
+#hide-me {
+    -webkit-animation: hide 5s forwards; 
+    animation: hide 5s forwards;
+}
+#collapse-down {
+    
+    -webkit-animation: down 2s forwards; 
+    animation: down 2s forwards;
+    animation-delay: 4s;
+}
+#collapse-up {
+
+    
+    -webkit-animation: up 2s forwards; 
+    animation: up 2s forwards;
+     animation-delay: 4s;
+}
+
+@keyframes down {
+    0% { transform: translateY(0); }
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% { transform: translateY(150px); }
+    100% {opacity: 0;}
+    
+}
+@-webkit-keyframes down {
+    0% { transform: translateY(0); }
+    
+     0%  {opacity: 1;}
+    90%  {opacity: 1;}
+    100% { transform: translateY(150px); }
+    100% {opacity: 0;}
+    
+}
+
+@keyframes up{
+    0% { transform: translateY(0); }
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% { transform: translateY(-150px); }
+    100% {opacity: 0;}
+    
+}
+@-webkit-keyframes up {
+    0% { transform: translateY(0); }
+     0%  {opacity: 1;}
+    90%  {opacity: 1;}
+    100% { transform: translateY(-150px); }
+    100% {opacity: 0;}
+    
+}
+
+@keyframes hide {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+    
+}
+@-webkit-keyframes hide {
+     0%  {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+    
+}
+
 #super{  
 vertical-align:super;  
 font-size: medium;  
@@ -421,14 +487,6 @@ th.target{
   text-align: center;
 
 }
-
-
-
-
-
-
-
-
 
   .box-2{
     flex:0.5;
