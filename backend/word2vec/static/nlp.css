@@ -147,10 +147,21 @@
     top: 0px;
     margin-bottom: 0px;
     margin-top: -60px;
-   min-width: 60px;
+    table-layout: fixed;
 
 }
 
+
+#leftWeight{
+
+  width: 200px;
+}
+
+#leftWeight td{
+
+width: 200px;
+  
+}
 
 .input-table thead tr {
     background-color: green;
@@ -166,6 +177,7 @@
     border: 8px solid #A42015;
     outline: 1px solid black;
     outline-offset: -4px;
+    width: calc(100%/3);
 
 
     font-style: "Fira Sans";

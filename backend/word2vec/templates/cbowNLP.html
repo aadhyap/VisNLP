@@ -227,138 +227,9 @@
 
 </div>
 
-<div class="eqbox"> testins</div>
-
-<script >
-  function circ1() {
-
-    var elements = document.getElementsByClassName('line');
-   Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle1"){
-        line.style.opacity = "0.2"
-
-      }
-      else{
-
-        line.style.opacity = "0.9"
-
-      }
-});
-
-   var w = document.getElementsByClassName('dotw');
-    Array.prototype.forEach.call(w, function(dotw) {
-      if(dotw.id != "circle1" && dotw.id != "fin"){
-        dotw.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotw.style.opacity = "0.9"
-
-      }
-});
- var b = document.getElementsByClassName('dotb');
-    Array.prototype.forEach.call(b, function(dotb) {
-      if(dotb.id != "circle1" && dotb.id != "fin"){
-        dotb.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotb.style.opacity = "0.9"
-
-      }
-});
 
 
-
-}
-
-function circ2() {
-   var elements = document.getElementsByClassName('line');
-   Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle2"){
-        line.style.opacity = "0.2"
-
-      }else{
-
-        line.style.opacity = "0.9"
-
-      }
-});
-
-    var w = document.getElementsByClassName('dotw');
-    Array.prototype.forEach.call(w, function(dotw) {
-      if(dotw.id != "circle2" && dotw.id != "fin"){
-        dotw.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotw.style.opacity = "0.9"
-
-      }
-});
- var b = document.getElementsByClassName('dotb');
-    Array.prototype.forEach.call(b, function(dotb) {
-      if(dotb.id != "circle2" && dotb.id != "fin"){
-        dotb.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotb.style.opacity = "0.9"
-
-      }
-});
-
-}
-
-function circ3() {
-   var elements = document.getElementsByClassName('line');
-   Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle3"){
-        line.style.opacity = "0.2"
-
-      }else{
-
-        line.style.opacity = "0.9"
-
-      }
-});
-
-    var w = document.getElementsByClassName('dotw');
-    Array.prototype.forEach.call(w, function(dotw) {
-      if(dotw.id != "circle3" && dotw.id != "fin"){
-        dotw.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotw.style.opacity = "0.9"
-
-      }
-});
- var b = document.getElementsByClassName('dotb');
-    Array.prototype.forEach.call(b, function(dotb) {
-      if(dotb.id != "circle3" && dotb.id != "fin"){
-        dotb.style.opacity = "0.2"
-
-      }
-      else{
-
-        dotb.style.opacity = "0.9"
-
-      }
-});
-
-}
-</script>
-
-
-
-
-  <div class="matrixform">
+ <div class="matrixform">
     <div id  = "hide-me" class = "box" style = "left: 150px; top: 250px;">&#43</div>
 
   
@@ -434,6 +305,9 @@ function circ3() {
     </table>
     <h3 id  = "fininput" class="word" style="top:-400px; position: relative;"> I + data </h3>
 
+<table id  = "leftWeight" class="input-table"style="top:200px; left: -230px;position: absolute; font-size: 15px;">
+    </table>
+
 
   </div>
 
@@ -441,6 +315,160 @@ function circ3() {
 
 
 </div>
+
+<script >
+  function circ1() {
+
+    var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle1"){
+        line.style.opacity = "0.2"
+
+      }
+      else{
+
+        line.style.opacity = "1"
+
+      }
+
+});
+
+   var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle1" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "1"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle1" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "1"
+
+      }
+});
+
+var fin = document.getElementsByClassName('input-table');
+    Array.prototype.forEach.call(fin, function(fininput) {
+      if(fininput.id == "fininput"){
+
+      fininput.style.display = "none"
+    }
+});
+
+  var word = document.getElementsByClassName('word');
+    Array.prototype.forEach.call(word, function(wor) {
+      wor.style.display = "none"
+    
+});
+
+    var eq = document.getElementsByClassName('eqbox');
+    Array.prototype.forEach.call(eq, function(eqbox) {
+      eqbox.style.display = "block"
+    
+});
+
+
+
+
+
+}
+
+function circ2() {
+   var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle2"){
+        line.style.opacity = "0.2"
+
+      }else{
+
+        line.style.opacity = "1"
+
+      }
+});
+
+    var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle2" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "1"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle2" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "0.9"
+
+      }
+});
+
+}
+
+function circ3() {
+   var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle3"){
+        line.style.opacity = "0.2"
+
+      }else{
+
+        line.style.opacity = "0.9"
+
+      }
+});
+
+    var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle3" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "0.9"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle3" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "0.9"
+
+      }
+});
+
+}
+</script>
+
+
+
+
+ 
 
     
 
@@ -456,6 +484,8 @@ function circ3() {
    
     <script>
 
+
+
       const url = 'http://localhost:6969/matrix'
       fetch(url)
             .then(function (response) {
@@ -463,6 +493,7 @@ function circ3() {
             })
             .then(function (data) {
               appendVocab(data);
+              LeftData(data);
                 
                 
             })
@@ -508,6 +539,23 @@ function circ3() {
         div.innerHTML = text
         mainContainer.appendChild(div);
     }
+
+    function LeftData(data) {
+              var mainContainer = document.getElementById("leftWeight");
+              for (var i = 0; i < data.epoch1.leftWeight.length; i++) {
+              var div = document.createElement("table");
+              let text = "<tr>"
+              for (var j = 0; j < data.epoch1.leftWeight[i].length; j++) {
+
+              text += "<td>" + data.epoch1.leftWeight[i][j] + "</td>"
+            }
+            text += "</tr>" 
+            div.innerHTML = text
+            mainContainer.appendChild(div);
+          }   
+          }   
+
+        
     
     </script>
   </div>

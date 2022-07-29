@@ -57,6 +57,9 @@ class CBOWModel(torch.nn.Module):
     """ Context words as input, returns possiblity distribution
         prediction of center word (target).
     """
+    def truncate(self, n, decimals=0):
+        multiplier = 10 ** decimals
+        return int(n * multiplier) / multiplier
 
     def clean(self, data):
         res = " "
@@ -85,6 +88,8 @@ class CBOWModel(torch.nn.Module):
             arr = []
             for value in i.split(','):
                 if(len(value) > 0):
+                   
+                    value = self.truncate(float(value), 2)
                     arr.append(float(value))
 
 
