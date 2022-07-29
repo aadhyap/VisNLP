@@ -227,24 +227,40 @@
 }
 
 .dotw {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+
 }
 
+
+
 .dotb {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-color: black;
   border-radius: 50%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.line{
+
+  width: 5px;
+  background: black;
+  height: 250px;
+  position: absolute;
+  top: 150px;
+  transform: rotate(100deg);
+  left: 220px;
+  z-index: -1;
+}
+
 
 
 .input-word{
@@ -276,6 +292,23 @@
     animation: up 2s forwards;
      animation-delay: 4s;
 }
+
+#circle1 {
+    visibility: hidden;
+  animation: 7s fadeIn;
+  animation-fill-mode: forwards;
+}
+#circle2 {
+    visibility: hidden;
+  animation: 8s fadeIn;
+  animation-fill-mode: forwards;
+}
+#circle3 {
+    visibility: hidden;
+  animation: 9s fadeIn;
+  animation-fill-mode: forwards;
+}
+
 
 @keyframes down {
     0% { transform: translateY(0); }
@@ -367,7 +400,10 @@ font-size: medium;
 #sub{  
 vertical-align: sub;  
 font-size: medium;  
-}  
+}
+
+
+
 
 
 .box{
