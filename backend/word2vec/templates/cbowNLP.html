@@ -85,6 +85,7 @@
  
 
   </div>
+
 </div>
 
 
@@ -157,64 +158,202 @@
 <table id  = "fininput" class="input-vis" style=" top: -480px; position: relative; ">
       <tbody>
       <tr>
-        <td><span class="dotw "></span> </td>
+        <td><span class="dotw " id = "fin"></span> </td>
       </tr>
       <tr>
-        <td><span class="dotb"></span></td>
+        <td><span class="dotb" id = "fin"></span></td>
       </tr>
       <tr>
-        <td><span class="dotw"></span></td>
+        <td><span class="dotw" id = "fin"></span></td>
       </tr>
       <tr>
-        <td><span class="dotb"></span></td>
+        <td><span class="dotb" id = "fin"></span></td>
       </tr>
       <tr>
-        <td><span class="dotw"></span></td>
+        <td><span class="dotw" id = "fin"></span></td>
       </tr>
     </tbody>
     </table>
-    <h3 id  = "fininput" class="input-word" style=" left: 25px;top: 440px; position: absolute; margin-bottom: 0px; margin-top:0px">W(t+1) + W(t-1)</h3>
+    <h3 id  = "text" class="input-word" style=" left: 25px;top: 440px; position: absolute; margin-bottom: 0px; margin-top:0px">W(t+1) + W(t-1)</h3>
 
+
+
+ <span id = "circle1" class = "line" > </span>
+ <span id = "circle1" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
+  <span id = "circle1" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
+  <span id = "circle1" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
+  <span id = "circle1" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
+
+
+  <span id = "circle2" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
+  <span id = "circle2" class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
+  <span id = "circle2" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
+  <span id = "circle2" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
+  <span id = "circle2" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
+
+
+
+    <span id = "circle3" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
+     <span id = "circle3" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>   
+    <span id = "circle3" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
+    <span id = "circle3" class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
+    <span id = "circle3" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
 
 <table id  = "fininput" class="input-vis" style=" right: -240px;top: -670px; position: relative; ">
       <tbody>
   
       <tr>
-        <td ><span id = "circle1"class="dotb"></span></td>
+        <td  ><span onclick="circ1()" id = "circle1"class="dotb"></span></td>
       </tr>
       <tr>
-        <td ><span id = "circle2"class="dotw"></span></td>
+        <td ><span onclick="circ2()" id = "circle2"class="dotw"></span></td>
       </tr>
       <tr>
-        <td ><span id = "circle3"class="dotb"></span></td>
+        <td ><span onclick="circ3()" id = "circle3"class="dotb"></span></td>
       </tr>
     </tbody>
     </table>
 
-    <span id = "circle1" class = "line" > </span>
-    <span id = "circle2" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
+  
+   
 
 
-    <span id = "circle1" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
-    <span id = "circle2" class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>
-
-    <span id = "circle1" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
-    <span id = "circle2" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
-
-    <span id = "circle1" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
-    <span id = "circle2" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
-
-    <span id = "circle1" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
-    <span id = "circle2" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
+    
+    
+   
 
 
+<div id = "test" class = "eqbox"><span class="w">w </span><span class="w" id = "sub">1</span> <span class="a">a</span><span class="a"id = "sub">1 </span><span class="plus">+</span>  <span class="w">w </span><span class="w" id = "sub">2</span><span class="a">a</span><span class="a"id = "sub">2 </span><span class="plus">+</span>  <span class="w">w </span><span class="w" id = "sub">3</span><span class="a">a</span><span class="a"id = "sub">3</span><span class="plus">+</span>  <span class="w">w </span><span class="w" id = "sub">4</span><span class="a">a</span><span class="a"id = "sub">4</span><span class="plus">+</span>  <span class="w">w </span><span class="w" id = "sub">5</span><span class="a">a</span><span class="a"id = "sub">5</span></div>
 
 </div>
+
+<div class="eqbox"> testins</div>
+
+<script >
+  function circ1() {
+
+    var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle1"){
+        line.style.opacity = "0.2"
+
+      }
+      else{
+
+        line.style.opacity = "0.9"
+
+      }
+});
+
+   var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle1" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "0.9"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle1" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "0.9"
+
+      }
+});
+
+
+
+}
+
+function circ2() {
+   var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle2"){
+        line.style.opacity = "0.2"
+
+      }else{
+
+        line.style.opacity = "0.9"
+
+      }
+});
+
+    var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle2" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "0.9"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle2" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "0.9"
+
+      }
+});
+
+}
+
+function circ3() {
+   var elements = document.getElementsByClassName('line');
+   Array.prototype.forEach.call(elements, function(line) {
+      if(line.id != "circle3"){
+        line.style.opacity = "0.2"
+
+      }else{
+
+        line.style.opacity = "0.9"
+
+      }
+});
+
+    var w = document.getElementsByClassName('dotw');
+    Array.prototype.forEach.call(w, function(dotw) {
+      if(dotw.id != "circle3" && dotw.id != "fin"){
+        dotw.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotw.style.opacity = "0.9"
+
+      }
+});
+ var b = document.getElementsByClassName('dotb');
+    Array.prototype.forEach.call(b, function(dotb) {
+      if(dotb.id != "circle3" && dotb.id != "fin"){
+        dotb.style.opacity = "0.2"
+
+      }
+      else{
+
+        dotb.style.opacity = "0.9"
+
+      }
+});
+
+}
+</script>
 
 
 
