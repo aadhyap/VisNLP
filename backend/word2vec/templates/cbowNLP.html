@@ -178,26 +178,26 @@
 
 
 
- <span id = "circle1" class = "line" > </span>
- <span id = "circle1" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
-  <span id = "circle1" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
-  <span id = "circle1" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
-  <span id = "circle1" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
+ <span onclick="lin()" id = "circle1" class = "line" > </span>
+ <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
+  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
+  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
+  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
 
 
-  <span id = "circle2" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
-  <span id = "circle2" class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
-  <span id = "circle2" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
-  <span id = "circle2" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
-  <span id = "circle2" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
+  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
+  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
+  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
+  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
+  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
 
 
 
-    <span id = "circle3" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
-     <span id = "circle3" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>   
-    <span id = "circle3" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
-    <span id = "circle3" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
+    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
+     <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>   
+    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
+    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
+    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
 
 <table id  = "fininput" class="input-vis" style=" right: -240px;top: -670px; position: relative; ">
       <tbody>
@@ -308,16 +308,16 @@
     <h3 id  = "fininput" class="word" style="top:-400px; position: relative;"> I + data </h3>
 
 
-<div class= "leftTitle "> Embedded Weights </div>
-<div class= "leftTitle " style="background-color: white; border-radius: 15px; color: #1F16F1; left: 390px; width: 100px;"> Bias </div>
-<table id  = "leftWeight" class="weight-table"style="top:200px; left: -200px;position: absolute; font-size: 15px;">
+<div id = "firstweights" class= "leftTitle " style="display: none;"> Embedded Weights </div>
+<div id = "firstweights" class= "leftTitle " style="background-color: white; display:  none; border-radius: 15px; color: #1F16F1; left: 390px; width: 100px;"> Bias </div>
+<table id  = "leftWeight" class="weight-table"style="top:200px; display: none;left: -200px;position: absolute; font-size: 15px;">
     </table>
 
-    <table id  = "leftBias" class="bias-table"style="top:200px; left: 150px;position: absolute; font-size: 15px;">
+    <table id  = "leftBias" class="bias-table"style="top:200px; left: 150px; display: none;position: absolute; font-size: 15px;">
     </table>
 
-    <div class = "neuron">Neuron Value : 0</div>
-    <div class = "update">Update Weights</div>
+    <div  id = "firstweights" class = "neuron" style="display: none;">Neuron Value : 0</div>
+    <div id = "firstweights" class = "update" style="display: none;">Update Weights</div>
 
 
   </div>
@@ -367,31 +367,11 @@
         dotb.style.opacity = "1"
 
       }
-});
 
-var fin = document.getElementsByClassName('input-table');
-    Array.prototype.forEach.call(fin, function(fininput) {
-      if(fininput.id == "fininput"){
-
-      fininput.style.display = "none"
-    }
-});
-
-  var word = document.getElementsByClassName('word');
-    Array.prototype.forEach.call(word, function(wor) {
-      wor.style.display = "none"
-    
-});
-
-    var eq = document.getElementsByClassName('eqbox');
-    Array.prototype.forEach.call(eq, function(eqbox) {
-      eqbox.style.display = "block"
-    
 });
 
 
-
-
+   neuron()
 
 }
 
@@ -474,6 +454,93 @@ function circ3() {
 });
 
 }
+
+
+function neuron(){
+
+  var fin = document.getElementsByClassName('input-table');
+    Array.prototype.forEach.call(fin, function(fininput) {
+      if(fininput.id == "fininput"){
+
+      fininput.style.display = "none"
+    }
+});
+
+  var word = document.getElementsByClassName('word');
+    Array.prototype.forEach.call(word, function(wor) {
+      wor.style.display = "none"
+    
+});
+
+    var eq = document.getElementsByClassName('eqbox');
+    Array.prototype.forEach.call(eq, function(eqbox) {
+      eqbox.style.display = "block"
+    
+});
+
+
+    var first = document.querySelectorAll('[id=firstweights]');;
+    Array.prototype.forEach.call(first, function(firstweights) {
+     
+      firstweights.style.display = "block"
+
+      
+      
+});
+
+var leftweight  =  document.getElementById('leftWeight')
+leftWeight.style.display = "block"
+var bias =  document.getElementById('leftBias')
+bias.style.display = "block"
+
+
+
+
+
+
+}
+
+function lin(){
+ var fin = document.getElementsByClassName('input-table');
+    Array.prototype.forEach.call(fin, function(fininput) {
+      if(fininput.id == "fininput"){
+
+      fininput.style.display = "none"
+    }
+});
+
+  var word = document.getElementsByClassName('word');
+    Array.prototype.forEach.call(word, function(wor) {
+      wor.style.display = "none"
+    
+});
+
+    var eq = document.getElementsByClassName('eqbox');
+    Array.prototype.forEach.call(eq, function(eqbox) {
+      eqbox.style.display = "none"
+    
+});
+   var first = document.querySelectorAll('[id=firstweights]');
+    Array.prototype.forEach.call(first, function(firstweights) {
+      firstweights.style.display = "none"
+       });
+
+
+    var left = document.getElementsByClassName('leftTitle');
+    Array.prototype.forEach.call(left, function(leftTitle) {
+      leftTitle.style.display = "block"
+    });
+
+var leftweight  =  document.getElementById('leftWeight')
+leftWeight.style.display = "block"
+var bias =  document.getElementById('leftBias')
+bias.style.display = "block"
+
+
+}
+
+
+
 </script>
 
 
