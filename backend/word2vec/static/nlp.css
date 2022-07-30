@@ -129,9 +129,10 @@
 .matrixform{
 
 
-  background-color: #706E6E;
+  background-color: rgba(217, 217, 217, .16);
   width: 40%;
   height: 545px;
+ 
   
   top: 80px;
   right: 30px;
@@ -140,6 +141,95 @@
   position: absolute;
 
 }
+
+.bias-table thead tr {
+    background-color: green;
+    color: blue;
+    text-align: left;
+}
+
+.bias-table th,
+.bias-table td {
+    padding: 3px 5px;
+    background-color: #7772EC;
+    opacity: 0.85;
+    border: 8px solid #7772EC;
+    outline: 1px solid black;
+    outline-offset: -4px;
+    width: calc(100%/3);
+
+
+    font-style: "Fira Sans";
+    font-size: 24px;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+
+}
+.bias-table {
+    margin-right: 45%;
+    margin-left: 45%;
+    top: 0px;
+    margin-bottom: 0px;
+    margin-top: -60px;
+    table-layout: fixed;
+
+}
+
+
+.leftTitle{
+
+  width: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: "Fira Sans";
+  bottom: 450px;
+  text-align: center;
+
+  left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+
+
+
+}
+
+
+.weight-table thead tr {
+    background-color: green;
+    color: blue;
+    text-align: left;
+}
+
+.weight-table th,
+.weight-table td {
+    padding: 3px 5px;
+    background-color: #FABBB5;
+    opacity: 0.85;
+    border: 8px solid #FABBB5;
+    outline: 1px solid black;
+    outline-offset: -4px;
+    width: calc(100%/3);
+
+
+    font-style: "Fira Sans";
+    font-size: 24px;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+
+}
+.weight-table {
+    margin-right: 45%;
+    margin-left: 45%;
+    top: 0px;
+    margin-bottom: 0px;
+    margin-top: -60px;
+    table-layout: fixed;
+
+}
+
 
 .input-table {
     margin-right: 45%;
@@ -151,16 +241,47 @@
 
 }
 
-
-#leftWeight{
+.neuron{
 
   width: 200px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  color: #FA07FF;
+  bottom: 40px;
+  left: 50px;
+  font-style: "Fira Sans";
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+
 }
+
+.update{
+
+  width: 150px;
+  background-color: #FB9D9D;
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: black;
+  bottom: 10px;
+  left: 370px;
+  font-style: "Fira Sans";
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+
+
+}
+
+
+
 
 #leftWeight td{
 
 width: 200px;
-  
+
 }
 
 .input-table thead tr {
