@@ -627,13 +627,49 @@ bias.style.display = "block"
               var div = document.createElement("table");
               let text = "<tr>"
               for (var j = 0; j < data.epoch1.leftWeight[i].length; j++) {
+                if(parseFloat(data.epoch1.leftWeight[i][j]) >= 0 && parseFloat(data.epoch1.leftWeight[i][j]) < 0.2){
+              text += "<td style='background-color: rgba(0,255,0, 0.8);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
+          if(parseFloat(data.epoch1.leftWeight[i][j]) >= 0.2 && parseFloat(data.epoch1.leftWeight[i][j]) < 0.4){
+              text += "<td style='background-color: rgba(0,255,0, 0.84);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
+          else if(parseFloat(data.epoch1.leftWeight[i][j]) >= 0.4 && parseFloat(data.epoch1.leftWeight[i][j]) < 0.6){
+              text += "<td style='background-color: rgba(0,255,0, 0.87);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }else if(parseFloat(data.epoch1.leftWeight[i][j]) >= 0.6 && parseFloat(data.epoch1.leftWeight[i][j]) < 0.8){
+              text += "<td style='background-color: rgba(0,255,0, 0.93);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }else if(parseFloat(data.epoch1.leftWeight[i][j]) >= 0.8 && parseFloat(data.epoch1.leftWeight[i][j]) <= 1){
+              text += "<td style='background-color: rgba(0,255,0, 0.99);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
 
-              text += "<td>" + data.epoch1.leftWeight[i][j] + "</td>"
+          
+
+
+          else if(parseFloat(data.epoch1.leftWeight[i][j]) <= 0 && parseFloat(data.epoch1.leftWeight[i][j]) > -0.2){
+              text += "<td style='background-color: rgba(255, 0, 0, .8);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
+          else if(parseFloat(data.epoch1.leftWeight[i][j]) <= -0.2 && parseFloat(data.epoch1.leftWeight[i][j]) > -0.4){
+              text += "<td style='background-color: rgba(255, 0, 0, 0.84);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
+          else if(parseFloat(data.epoch1.leftWeight[i][j]) <= -0.4 && parseFloat(data.epoch1.leftWeight[i][j]) > -0.6){
+              text += "<td style='background-color: rgba(255, 0, 0, 0.87);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }else if(parseFloat(data.epoch1.leftWeight[i][j]) <= -0.6 && parseFloat(data.epoch1.leftWeight[i][j]) > -0.8){
+              text += "<td style='background-color: rgba(255, 0, 0, 0.93);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }else if(parseFloat(data.epoch1.leftWeight[i][j]) <= -0.8 && parseFloat(data.epoch1.leftWeight[i][j]) > -1){
+              text += "<td style='background-color: rgba(255, 0, 0, 0.99);'>" + data.epoch1.leftWeight[i][j] + "</td>"
+          }
+          
+        
+
             }
             text += "</tr>" 
             div.innerHTML = text
             mainContainer.appendChild(div);
-          }   
+          } 
+
+
+
+
+
           }   
 
     function leftBias(data) {
