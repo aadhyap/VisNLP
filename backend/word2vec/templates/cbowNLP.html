@@ -178,26 +178,26 @@
 
 
 
- <span onclick="lin()" id = "circle1" class = "line" > </span>
- <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
-  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
-  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
-  <span onclick="lin()" id = "circle1" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
+ <span onclick="lin()" id = "line1" class = "line" > </span>
+ <span onclick="lin()" id = "line2" class = "line" style="transform: rotate(90deg); top: 175px;" > </span>
+  <span onclick="lin()" id = "line3" class = "line" style="transform: rotate(80deg); top: 200px; height: 240px;" > </span>
+  <span onclick="lin()" id = "line4" class = "line" style="transform: rotate(70deg); top: 210px; height: 260px;" > </span>
+  <span onclick="lin()" id = "line5" class = "line" style="transform: rotate(60deg); top: 230px; height: 270px;" > </span>
 
 
-  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
-  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
-  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
-  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
-  <span onclick="lin()" id = "circle2" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
+  <span onclick="lin()" id = "line6" class = "line" style="transform: rotate(110deg); top: 170px;" > </span>
+  <span onclick="lin()" id = "line7"class = "line" style="transform: rotate(100deg); top: 200px; height: 250px;" > </span>
+  <span onclick="lin()" id = "line8" class = "line" style="transform: rotate(90deg); top: 230px; height: 240px;" > </span>
+  <span onclick="lin()" id = "line9" class = "line" style="transform: rotate(80deg); top: 250px; height: 240px;" > </span>
+  <span onclick="lin()" id = "line10" class = "line" style="transform: rotate(70deg); top: 270px; height: 240px;" > </span>
 
 
 
-    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
-     <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>   
-    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
-    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
-    <span onclick="lin()" id = "circle3" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
+    <span onclick="lin()" id = "line11" class = "line" style="transform: rotate(118deg); top: 187px; height: 270px;" > </span>
+     <span onclick="lin()" id = "line12" class = "line" style="transform: rotate(110deg); top: 210px; height: 250px;" > </span>   
+    <span onclick="lin()" id = "line13" class = "line" style="transform: rotate(100deg); top: 240px; height: 250px;" > </span>
+    <span onclick="lin()" id = "line14"class = "line" style="transform: rotate(90deg); top: 260px;" > </span>
+    <span onclick="lin()" id = "line15" class = "line" style="transform: rotate(80deg); top: 290px;" > </span>
 
 <table id  = "fininput" class="input-vis" style=" right: -240px;top: -670px; position: relative; ">
       <tbody>
@@ -332,7 +332,7 @@
 
     var elements = document.getElementsByClassName('line');
    Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle1"){
+      if(line.id != "line1" && line.id !="line2" && line.id !="line3" && line.id !="line4" && line.id !="line5" ){
         line.style.opacity = "0.2"
 
       }
@@ -346,7 +346,7 @@
 
    var w = document.getElementsByClassName('dotw');
     Array.prototype.forEach.call(w, function(dotw) {
-      if(dotw.id != "circle1" && dotw.id != "fin"){
+      if(dotw.id != "class1"  && dotw.id != "fin"){
         dotw.style.opacity = "0.2"
 
       }
@@ -358,7 +358,7 @@
 });
  var b = document.getElementsByClassName('dotb');
     Array.prototype.forEach.call(b, function(dotb) {
-      if(dotb.id != "circle1" && dotb.id != "fin"){
+      if(dotb.id != "class1"  && dotb.id != "fin"){
         dotb.style.opacity = "0.2"
 
       }
@@ -378,7 +378,7 @@
 function circ2() {
    var elements = document.getElementsByClassName('line');
    Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle2"){
+      if(line.id != "line6" && line.id !="line7" && line.id !="line8" && line.id !="line9" && line.id !="line10"){
         line.style.opacity = "0.2"
 
       }else{
@@ -419,19 +419,19 @@ function circ2() {
 function circ3() {
    var elements = document.getElementsByClassName('line');
    Array.prototype.forEach.call(elements, function(line) {
-      if(line.id != "circle3"){
+      if(line.id != "line11" && line.id !="line12" && line.id !="line13" && line.id !="line14" && line.id !="line15" ){
         line.style.opacity = "0.2"
 
       }else{
 
-        line.style.opacity = "0.9"
+        line.style.opacity = "1"
 
       }
 });
 
     var w = document.getElementsByClassName('dotw');
     Array.prototype.forEach.call(w, function(dotw) {
-      if(dotw.id != "circle3" && dotw.id != "fin"){
+      if(dotw.id != "circle3"  && dotw.id != "fin"){
         dotw.style.opacity = "0.2"
 
       }
